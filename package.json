@@ -1,14 +1,22 @@
 {
   "name": "xigua-components",
-  "version": "1.0.0",
-  "description": "西瓜文档组件",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "西瓜文档组件库",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "atool-build --config ./webpack.config.js"
+    "init": "rm -rf ./node_modules &&  cnpm i --by=yarn",
+    "build": "atool-build --no-compress --config ./webpack.config.js",
+    "pub": "npm run build && npm publish"
   },
+  "directories": {
+    "lib": "./lib",
+    "src": "./src"
+  },
+  "files": [
+    "lib"
+  ],
   "entry": {
-    "index": "./index.js"
+    "index": "./src/index.js"
   },
   "repository": {
     "type": "git",

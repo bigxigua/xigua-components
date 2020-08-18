@@ -6,9 +6,9 @@ module.exports = function webpackConfig(compile) {
   compile.resolve.alias = {
     ...compile.resolve.alias,
     ...({
-      '@common': path.resolve(__dirname, './components'),
-      '@util': path.resolve(__dirname, './components/_util'),
-      '@hooks': path.resolve(__dirname, './components/_hooks'),
+      '@common': path.resolve(__dirname, './src'),
+      '@util': path.resolve(__dirname, './src/_util'),
+      '@hooks': path.resolve(__dirname, './src/_hooks'),
     })
   }
   return compile;

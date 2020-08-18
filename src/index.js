@@ -20,12 +20,10 @@ import Tag from '@common/tag';
 import Tooltip from '@common/tooltip';
 import DeleteConfirm from '@common/delete-confirm';
 
-console.log('===========1');
-
 export default {
   Alert,
   AutoComplete,
-  // Breadcrumb,
+  Breadcrumb,
   Button,
   Dropdown,
   Empty,

@@ -21,6 +21,7 @@ export default function Breadcrumb(props) {
   if (!Array.isArray(crumbs) || crumbs.length === 0) {
     return null;
   }
+  console.log('NavLink:', NavLink);
   const createNavLink = ({ text, pathname }) => {
     return <NavLink to={pathname}
       className="ellipsis"

@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import { checkBrowser } from '@util/util';
 import './index.css';
 
@@ -21,18 +20,16 @@ export default function Breadcrumb(props) {
   if (!Array.isArray(crumbs) || crumbs.length === 0) {
     return null;
   }
-  console.log('NavLink:', NavLink);
-  const createNavLink = ({ text, pathname }) => {
-    return <NavLink to={pathname}
-      className="ellipsis"
-      activeStyle={{ color: '#262626', fontWeight: 'bold' }}>{text}</NavLink>;
+  const createNavLink = ({ text, pathname, target }, isLastOne) => {
+    const activeStyle = isLastOne ? { color: '#262626', fontWeight: 'bold' } : {};
+    return <a className="ellipsis" style={activeStyle} href={pathname} target={target || ''}>{text}</a>
   };
   const _crumbs_ = crumbs.filter(n => !!n.text);
   const crumbsJsx = _crumbs_.map((n, i) => {
     return (<div
       className="breadcrumb-item flex ellipsis"
       key={i}>
-      {n.render ? n.render(n) : createNavLink(n)}
+      {n.render ? n.render(n) : createNavLink(n, i === _crumbs_.length - 1)}
       {(i !== _crumbs_.length - 1) && <span>/</span>}
     </div>);
   });

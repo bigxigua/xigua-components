@@ -64,7 +64,7 @@
   line-height: 1.5;
   word-wrap: break-word;
   padding: 0 24px 20px 24px;
-  max-height: 400px;
+  max-height: calc(100vh - 100px);
   overflow: scroll;
 }
 

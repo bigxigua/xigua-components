@@ -6,6 +6,7 @@ import Dropdown from '@common/dropdown';
 import Empty from '@common/empty';
 import Icon from '@common/icon';
 import Image from '@common/image';
+import Avatar from '@common/avatar';
 import Input from '@common/input';
 import List from '@common/list';
 import Loading from '@common/loading';
@@ -18,6 +19,9 @@ import Select from '@common/select';
 import Table from '@common/table';
 import Tag from '@common/tag';
 import Tooltip from '@common/tooltip';
+import Popover from '@common/popover';
+import Footer from '@common/footer';
+import Search from '@common/search';
 import DeleteConfirm from '@common/delete-confirm';
 
 export default {
@@ -29,9 +33,13 @@ export default {
   Empty,
   Icon,
   Image,
+  Avatar,
+  Popover,
   Input,
   List,
   Loading,
+  Footer,
+  Search,
   M404,
   Message,
   Modal,

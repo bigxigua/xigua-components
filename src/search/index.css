@@ -1,0 +1,28 @@
+.search {
+  width: 200px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  color: #595959;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-right: 16px;
+  border: 1px solid #d9d9d9;
+  font-size: 12px;
+}
+
+.search .Icon {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.search-input {
+  width: 100%;
+  border: none;
+  height: 100%;
+  color: #595959;
+  font-size: inherit;
+  padding-right: 16px;
+  background: inherit;
+}

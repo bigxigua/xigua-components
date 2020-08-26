@@ -2,7 +2,6 @@ import React from 'react';
 import Empty from '@common/empty';
 import Pagination from '@common/pagination';
 import Icon from '@common/icon';
-// import Loading from '@common/loading';
 import './index.css';
 
 /**

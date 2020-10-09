@@ -1,6 +1,6 @@
 {
   "name": "xigua-components",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "西瓜文档组件库",
   "main": "dist/index.js",
   "scripts": {

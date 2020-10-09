@@ -24,7 +24,6 @@ export default function Popover({
   hideArrow = false,
   renderToBody = true
 }) {
-  console.log('--Popover---');
   const [style, setStyle] = useState([]);
   const wrapperRef = useRef(null);
   const contentRef = useRef(null);
